@@ -7,5 +7,5 @@ import marques.vitor.santander_dev_week_2023.domain.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-
+    boolean existsByAccountNumber(String account);
 }
